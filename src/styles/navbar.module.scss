@@ -1,0 +1,25 @@
+.navbar-container {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    padding: 32px;
+    top: 0px;
+    left: 0px;
+    background-color: #1b4f70;
+}
+.nav-list {
+    .item {
+        margin-bottom: 8px;
+        a {
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            color: #ffffff;
+            &.active {
+                color: #7cffb7;
+            }
+            &:hover {
+                color: #7cffb7;
+            }
+        }
+    }
+}

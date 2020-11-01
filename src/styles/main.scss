@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Arial";
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Arial';
+}
+@import "index.module";
+@import "navbar.module";
+@import "animeListingElement.module";
