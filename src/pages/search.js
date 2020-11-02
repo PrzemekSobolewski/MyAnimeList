@@ -5,7 +5,7 @@ import AnimeListing from '../components/animeListing.js';
 const Search = () => {
     return (
        <div>
-           <AnimeListing/>
+           <AnimeListing />
        </div>
     );
 }

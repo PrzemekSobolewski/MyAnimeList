@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 
 import Search from './pages/search.js';
+import Anime from './pages/anime.js';
 import Navbar from './components/navbar.js';
+
 function App() {
   return (
     <div className="main-content">
@@ -16,7 +18,7 @@ function App() {
         <div className="page-content">
           <Switch>
             <Route path="/search" component={Search} />
-              
+            <Route path="/anime/:id" component={Anime} />  
           </Switch>
         </div>
       </Router>

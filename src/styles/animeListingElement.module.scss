@@ -1,7 +1,24 @@
 .anime-list {
     &__element {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        padding: 16px;
+        border: 1px solid #dadada;
+        margin-bottom: 32px;
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        &:hover {
+            border: 1px solid #85b7d9;
+        }
     }
+    &__image img {
+        width: 125px;
+    }
+    .content {
+        margin-left: 16px;
+    }
+    a {
+        color: #000000;
+    }
+
 }

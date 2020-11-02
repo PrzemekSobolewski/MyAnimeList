@@ -3,7 +3,6 @@ import { List } from 'semantic-ui-react'
 import {Link, useLocation} from "react-router-dom";
 const Navbar = () => {
     const location = useLocation();
-    console.log(location.pathname);
     return (
         <div className="navbar-container">
             <List className="nav-list">
