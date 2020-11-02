@@ -10,9 +10,18 @@
         &:hover {
             border: 1px solid #85b7d9;
         }
+        .header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
     }
     &__image img {
         width: 125px;
+    }
+    &__rating {
+        font-size: 18px;
+        margin-left: 8px;
     }
     .content {
         margin-left: 16px;

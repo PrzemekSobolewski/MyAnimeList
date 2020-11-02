@@ -8,7 +8,10 @@ const AnimeListingElement = (props) => {
             <Item className="anime-list__element">
                 <Item.Image className="anime-list__image" src={props.anime_data.image_url} />
                 <Item.Content>
-                    <Item.Header as="h2">{props.anime_data.title}</Item.Header>
+                    <Item.Header as="h2">
+                        {props.anime_data.title}
+                        <span className="anime-list__rating">{props.anime_data.score}</span>
+                    </Item.Header>
                     <Item.Description>
                         <p>
                             {props.anime_data.synopsis}
