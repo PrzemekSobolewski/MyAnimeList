@@ -1,6 +1,6 @@
 import React from 'react';
-import {Item} from 'semantic-ui-react';
-import {Link} from "react-router-dom";
+import { Item } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 
 const AnimeListingElement = (props) => {
     return (

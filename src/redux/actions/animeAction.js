@@ -10,9 +10,9 @@ export const getAnimeList = (response) => {
 
 export const fetchAnime = (id) => async dispatch => {
     await fetch(PART_OF_URL + `${id}`)
-    .then(response => response.json())
-    .then(json => {
-        dispatch(getAnimeList(json));
-    })
-    .catch(err => console.log(err));
+        .then(response => response.json())
+        .then(json => {
+            dispatch(getAnimeList(json));
+        })
+        .catch(err => console.log(err));
 }
