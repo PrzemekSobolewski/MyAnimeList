@@ -12,7 +12,6 @@ export const fetchAnime = (id) => async dispatch => {
     await fetch(PART_OF_URL + `${id}`)
     .then(response => response.json())
     .then(json => {
-        console.log(json);
         dispatch(getAnimeList(json));
     })
     .catch(err => console.log(err));

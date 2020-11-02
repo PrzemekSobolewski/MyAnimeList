@@ -12,14 +12,35 @@
     &--button {
         border-radius: 0px;
         height: 38px;
-        background: #ffffff;
+        background: #ffffff !important;
         border: 1px solid rgba(34,36,38,.15);
         border-left: 0px;
         color: #000000;
+        outline: none;
         &:hover {
             background: #ffffff;
         }
-        
     }
-    
+}
+.empty-list__info {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__arrow {
+        font-size: 24px;
+        &.inactive {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+    &__page {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0px 16px;
+    }
 }

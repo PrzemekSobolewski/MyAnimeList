@@ -1,0 +1,25 @@
+
+.anime-info {
+    &__container {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__content {
+        margin-left: 16px;
+    }
+    &__image {
+        img {
+            width: 200px;
+        }
+    }
+}
+.go-back {
+    display: block;
+    font-weight: bold;
+    margin: 0px 0px 8px 8px;
+    font-size: 14px;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
