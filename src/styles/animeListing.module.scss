@@ -6,14 +6,13 @@
             display: flex;
             border-radius: 0px;
             height: 38px;
-            
         }
     }
     &--button {
         border-radius: 0px;
         height: 38px;
         background: #ffffff !important;
-        border: 1px solid rgba(34,36,38,.15);
+        border: 1px solid rgba(34, 36, 38, 0.15);
         border-left: 0px;
         color: #000000;
         outline: none;
@@ -45,14 +44,14 @@
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
     .content .find-anime__form {
         &--input {
             width: calc(100% - 84px);
         }
         &--button {
             width: 84px;
-            margin:0px;
+            margin: 0px;
         }
     }
 }
