@@ -6,3 +6,51 @@
     width: 100%;
     padding: 32px;
 }
+.rwd-show-nav {
+    display: none;
+    font-size: 40px;
+    margin: 32px 0px 0px 32px;
+}
+.content-shadow {
+    display: block;
+    position: fixed;
+    z-index: 50;
+    background: #000000;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    &.active {
+        pointer-events: all;
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .page-content {
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width:768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .rwd-show-nav {
+        display: block;
+    }
+    .page-content {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .page-content {
+        padding: 16px;
+    }
+    .rwd-show-nav {
+        margin: 16px 0px 0px 16px;
+    }
+}

@@ -1,10 +1,12 @@
 import React from 'react';
 import { List } from 'semantic-ui-react'
 import {Link, useLocation} from "react-router-dom";
-const Navbar = () => {
+import {MdClose} from "react-icons/md";
+const Navbar = (props) => {
     const location = useLocation();
     return (
-        <div className="navbar-container">
+        <div className={props.visible ? "navbar-container active" : "navbar-container"}>
+            <MdClose onClick={() => props.setVisible(false)} className="navbar-container__close"/>
             <List className="nav-list">
                 <List.Item >
                     <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>

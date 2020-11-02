@@ -20,5 +20,20 @@
     a {
         color: #000000;
     }
+}
 
+@media screen and (max-width: 450px) {
+    .anime-list {
+        &__image {
+            img {
+                width: 75px;
+            }
+        }
+        &__element {
+            margin-bottom: 16px;
+            .header {
+                font-size: 1.2rem;
+            }
+        }
+    }
 }

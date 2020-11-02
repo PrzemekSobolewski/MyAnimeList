@@ -6,6 +6,12 @@
     top: 0px;
     left: 0px;
     background-color: #1b4f70;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    z-index: 100;
+    &__close {
+        display: none;
+    }
 }
 .nav-list {
     .item {
@@ -21,5 +27,33 @@
                 color: #7cffb7;
             }
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-container {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        left: -500px;
+        &__close {
+            display: block;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            color: #ffffff;
+            font-size: 22px;
+        }
+        &.active {
+            left: 0px;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .navbar-container {
+        padding: 16px;
     }
 }

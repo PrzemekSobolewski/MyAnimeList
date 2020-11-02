@@ -7,11 +7,13 @@ import thunk from 'redux-thunk';
 import animeListReducer from './redux/reducers/animeListReducer.js';
 import animeReducer from './redux/reducers/animeReducer.js';
 import { CookiesProvider } from 'react-cookie';
+
 const reducers = combineReducers({
   animeList: animeListReducer,
   anime: animeReducer
 });
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
+
 ReactDOM.render(
     <CookiesProvider>
       <Provider store={store}>

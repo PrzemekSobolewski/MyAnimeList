@@ -23,3 +23,21 @@
         text-decoration: underline;
     }
 }
+@media screen and (max-width: 768px) {
+    .anime-info {
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__content {
+            margin-top: 16px;
+            margin-left: 0px;
+        }
+        &__image {
+            img {
+                width: 125px;
+            }
+        }
+    }
+}

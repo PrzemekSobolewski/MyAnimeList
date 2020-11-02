@@ -6,7 +6,6 @@ import * as actions from "../redux/actions/animeAction";
 
 const Anime = (props) => {
     const [animeId, setAnimeId] = useState(props.match.params.id);
-    const location = useLocation();
     const history = useHistory();
     const anime = useSelector(state => state.anime);
     const dispatch = useDispatch();
