@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import animeListReducer from './redux/reducers/animeListReducer.js';
 import animeReducer from './redux/reducers/animeReducer.js';
-import { CookiesProvider } from 'react-cookie';
 
 const reducers = combineReducers({
   animeList: animeListReducer,
