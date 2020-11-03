@@ -14,11 +14,9 @@ const reducers = combineReducers({
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
-    <CookiesProvider>
       <Provider store={store}>
         <App />
-      </Provider>
-    </CookiesProvider>,
+      </Provider>,
   document.getElementById('root')
 );
 
